@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>道学文化与命理测算工具集</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft Yahei', 'PingFang SC', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        
+        .subtitle {
+            color: #888;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .tool-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            border-color: #667eea;
+        }
+        
+        .tool-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .tool-title {
+            color: #667eea;
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .tool-desc {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .enter-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .enter-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .footer {
+            margin-top: 40px;
+            color: #888;
+            font-size: 14px;
+        }
+        
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px 20px;
+            }
+            
+            h1 {
+                font-size: 26px;
+            }
+            
+            .tools-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .tool-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏮 道学文化与命理测算工具集</h1>
+        <p class="subtitle">传承千年智慧，探索传统文化奥秘</p>
+        
+        <div class="tools-grid">
+            <!-- 道教神咒工具 -->
+            <div class="tool-card" onclick="window.location.href='zhou.html'">
+                <div class="tool-icon">🙏</div>
+                <h2 class="tool-title">道教八大神咒</h2>
+                <p class="tool-desc">学习道教经典八大神咒，了解其含义与用途。可用于修身养性、祈福辟邪。</p>
+                <button class="enter-btn">进入学习</button>
+            </div>
+            
+            <!-- 生辰八字工具 -->
+            <div class="tool-card" onclick="window.location.href='bazi.html'">
+                <div class="tool-icon">📅</div>
+                <h2 class="tool-title">生辰八字查询</h2>
+                <p class="tool-desc">输入阳历生日时间，查询对应的阴历生辰八字与五行属性。</p>
+                <button class="enter-btn">开始查询</button>
+            </div>
+            
+            <!-- 手机号数理工具 -->
+            <div class="tool-card" onclick="window.location.href='81.html'">
+                <div class="tool-icon">📱</div>
+                <h2 class="tool-title">手机号81数理</h2>
+                <p class="tool-desc">通过手机号码末四位数字，解读对应的81数理吉凶含义。</p>
+                <button class="enter-btn">立即解读</button>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>传统文化娱乐工具集 | 仅供学习交流与娱乐参考</p>
+            <p>所有内容均无科学依据，请理性对待</p>
+        </div>
+    </div>
+</body>
+</html>
